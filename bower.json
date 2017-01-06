@@ -2,15 +2,9 @@
   "name": "pixel2html-1-1",
   "version": "1.0.0",
   "private": true,
-
   "dependencies": {
-    
     "bootstrap-sass": "^3.3.*",
-    
-    
-    
-    
-      "jquery": "^3.1.1"
-    
+    "jquery": "^3.1.1",
+    "slick-carousel": "^1.6.0"
   }
 }

@@ -8,11 +8,16 @@
 // Provide a static navbar from which we expand to create full-width, fixed, and
 // other navbar variations.
 
+//Body padding
+body{
+  padding-top: $navbar-height;
+}
+
 .navbar {
   position: relative;
   min-height: $navbar-height; // Ensure a navbar always shows (e.g., without a .navbar-brand in collapsed mode)
   margin-bottom: $navbar-margin-bottom;
-  border: 1px solid transparent;
+  box-shadow: 1px 1px 5px $navbar-default-shadow;
 
   // Prevent floats from breaking the navbar
   @include clearfix;
@@ -233,11 +238,12 @@
   margin: ($navbar-padding-vertical / 2) (-$navbar-padding-horizontal);
 
   > li > a {
-    padding: 10px $grid-gutter-width;
+    padding: 10px 25px;
     line-height: $line-height-computed;
   }
 
   @media (max-width: $grid-float-breakpoint-max) {
+    margin: 0;
     // Dropdowns get custom display when collapsed
     .open .dropdown-menu {
       position: static;
@@ -395,7 +401,6 @@
 // Default navbar
 .navbar-default {
   background-color: $navbar-default-bg;
-  border-color: $navbar-default-border;
 
   .navbar-brand {
     color: $navbar-default-brand-color;

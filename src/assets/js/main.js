@@ -10,3 +10,8 @@ function printLog(log){
 }
 
 printLog(msg);
+
+
+$(document).ready(function(){
+	$('.slider__container').slick();
+});

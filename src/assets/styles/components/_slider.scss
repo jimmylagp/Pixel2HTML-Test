@@ -1,0 +1,9 @@
+@import "../../vendor/slick-carousel/slick/slick.scss";
+
+.slider{
+	background-image: url('../images/slider-right-image.png');
+	background-position: top left;
+	background-size: 604px, 433px;
+
+	@include imgRetina('../images/slider-right-image', png, 604px, 433px, top left);
+}

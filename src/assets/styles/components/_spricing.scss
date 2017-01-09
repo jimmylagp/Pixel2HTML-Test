@@ -1,3 +1,15 @@
 .spricing{
 	background-color: $m02-background-gray;
+	position: relative;
+	z-index: 1;
+
+	&:before{
+		background-color: $m02-background-gray2;
+		content: '';
+		height: 150px;
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		z-index: 0;
+	}
 }

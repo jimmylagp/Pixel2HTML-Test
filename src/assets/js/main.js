@@ -13,5 +13,7 @@ printLog(msg);
 
 
 $(document).ready(function(){
-	$('.slider__container').slick();
+	$('.slider__container').slick({
+		dots: true
+	});
 });

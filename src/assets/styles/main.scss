@@ -2,7 +2,7 @@
 * Pixel2HTML - 1
 */
 
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
 @import 'variables';
 @import 'mixins';
 @import 'reset';
@@ -15,6 +15,7 @@
 
 // components:start
 @import 'components/_header';
+@import 'components/_cover';
 @import 'components/_slider';
 @import 'components/_spricing';
 @import 'components/_lastcontent';

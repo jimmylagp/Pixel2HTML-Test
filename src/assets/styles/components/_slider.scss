@@ -4,6 +4,25 @@
 	background-image: url('../images/slider-right-image.png');
 	background-position: top left;
 	background-size: 604px, 433px;
+	padding: 7em 0;
 
 	@include imgRetina('../images/slider-right-image', png, 604px, 433px, top left);
+
+	.slider__container{
+		h3{
+			color: $m02-font-gray;
+			font-weight: 300;
+			margin: 0 0 0.5em 0;
+		}
+
+		p{
+			color: $m02-font-gray2;
+			line-height: 1.8em;
+			margin-bottom: 2em;
+		}
+
+		a{
+			font-size: 1.1em;
+		}
+	}
 }

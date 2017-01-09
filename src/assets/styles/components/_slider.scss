@@ -1,4 +1,5 @@
 @import "../../vendor/slick-carousel/slick/slick.scss";
+@import "../slick-customized/slick-theme.scss";
 
 .slider{
 	background-image: url('../images/slider-right-image.png');
@@ -9,6 +10,12 @@
 	@include imgRetina('../images/slider-right-image', png, 604px, 433px, top left);
 
 	.slider__container{
+		outline: none;
+
+		div{
+			outline: none;
+		}
+
 		h3{
 			color: $m02-font-gray;
 			font-weight: 300;
@@ -22,7 +29,9 @@
 		}
 
 		a{
+			display: inline-block;
 			font-size: 1.1em;
+			margin-bottom: 2em;
 		}
 	}
 }

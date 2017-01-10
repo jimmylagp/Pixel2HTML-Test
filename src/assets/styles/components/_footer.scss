@@ -1,3 +1,61 @@
 .footer{
 	background-color: $m02-background-gray3;
+	padding: 4em 0 5em 0;
+
+	&__description{
+		color: $m02-font-white;
+		font-weight: 300;
+		line-height: 1.8em;
+	}
+
+	&__list{
+		li{
+			margin-right: 2em;
+			ul{
+				li{
+					margin-bottom: 1em;
+
+					a{
+						color: $m02-font-white;
+						font-weight: 300;
+					}
+
+					strong{
+						color: $m02-font-white;
+						font-size: 1.2em;
+						font-weight: normal;
+					}
+				}
+			}
+		}
+	}
+
+	&__language{
+		.btn-group{
+			.btn{
+				background: transparent !important;
+				border: none;
+				box-shadow: none !important;
+				color: $m02-font-white;
+				font-size: 1.2em;
+				font-weight: 300;
+				padding: 0;
+
+				img{
+					margin-right: 0.5em;
+				}
+
+				.caret{
+					margin-left: 0.5em;
+				}
+			}
+
+			&.open{
+				.btn{
+					color: $m02-font-white;
+					opacity: 0.5;
+				}
+			}
+		}
+	}
 }

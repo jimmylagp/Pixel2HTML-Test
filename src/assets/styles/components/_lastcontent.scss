@@ -1,3 +1,52 @@
 .lastcontent{
 	background-color: $m02-background-gray2;
+	padding: 0 0 7em 0;
+
+	&__copytext{
+		h2{
+			color: $m02-font-white;
+			font-size: 3.5em;
+			font-weight: 300;
+			margin-bottom: 0.5em;
+		}
+
+		.description{
+			color: $m02-font-white;
+			font-size: 1.5em;
+			font-weight: 300;
+			margin-bottom: 2em;
+		}
+
+		.try-btn{
+			margin-bottom: 3.5em;
+
+			.btn{
+				background-color: $m02-background-green;
+				border: none;
+				color: $m02-font-white;
+				padding: 1.5em 3em;
+				margin-bottom: 2em;
+
+				&:hover{
+					background-color: $m02-background-green2;
+				}
+			}
+		}
+	}
+
+	&__customers{
+		p{
+			color: $m02-font-white;
+			font-size: 1.2em;
+			font-weight: normal;
+			margin-bottom: 2em;
+			opacity: 0.5;
+		}
+
+		ul{
+			li{
+				padding:0 2em;
+			}
+		}
+	}
 }

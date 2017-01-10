@@ -1,15 +1,175 @@
 .spricing{
 	background-color: $m02-background-gray;
 	position: relative;
+	padding: 8em 0;
 	z-index: 1;
 
 	&:before{
 		background-color: $m02-background-gray2;
 		content: '';
-		height: 150px;
+		height: 250px;
 		position: absolute;
 		bottom: 0;
 		width: 100%;
 		z-index: 0;
+	}
+
+	.spricing__copytext{
+		h2{
+			color: $m02-font-gray;
+			font-weight: 300;
+			margin: 0 0 0.5em 0;
+		}
+
+		p{
+			color: $m02-font-gray;
+			font-size: 1.6em;
+			font-weight: 300;
+			margin-bottom: 4em;
+		}
+	}
+
+	.spricing__tables{
+		border-radius: 10px;
+		overflow: hidden;
+		text-align: center;
+
+		.spricing__table{
+			height: 690px;
+			padding: 2em 2em;
+
+			hr{
+				margin-bottom: 2em;
+			}
+
+			.title{
+				font-size: 1.2em;
+				margin-bottom: 0;
+			}
+
+			.description{
+				font-size: 1.4em;
+			}
+
+			.price{
+				font-size: 4em;
+				font-weight: 300;
+			}
+
+			.frecuency{
+				font-size: 1.2em;
+			}
+
+			.second-description{
+				font-size: 1.1em;
+				margin-bottom: 2em;
+			}
+
+			.features{
+				padding: 0;
+				margin-bottom: 4em;
+
+				li{
+					list-style: none;
+					margin-bottom: 2em;
+					text-align: left;
+
+					&.checked::before{
+						background-image: url(../images/checked.svg);
+						background-repeat: no-repeat;
+						content: '';
+						display: inline-block;
+						height: 20px;
+						margin-right: 0.5em;
+						vertical-align: text-top;
+						width: 20px;
+					}
+
+					&.unchecked{
+						padding-left: 28px;
+					}
+				}
+			}
+
+			.btn{
+				border-radius: 8px;
+				display: block;
+				font-size: 1.2em;
+				padding: 0.5em 0;
+			}
+
+			&--white{
+				background-color: $m02-background-white;
+
+				.title{
+					color: $m02-font-blue2;
+				}
+
+				.description,
+				.frecuency,
+				.second-description{
+					color: $m02-font-gray2;
+				}
+
+				.price{
+					color: $m02-font-gray;
+				}
+
+				.features{
+					li{
+						color: $m02-font-gray2;
+
+						&.unchecked{
+							opacity: 0.5;
+						}
+					}
+				}
+
+				.btn{
+					border: 2px solid $m02-border-gray;
+					color: $m02-font-blue2;
+				}
+			}
+
+			&--blue{
+				background-color: $m02-background-blue;
+
+				hr{
+					opacity: 0.5;
+				}
+
+				.title,
+				.price{
+					color: $m02-font-white;
+				}
+
+				.description,
+				.frecuency,
+				.second-description{
+					color: $m02-font-white;
+					opacity: 0.5;
+				}
+
+				.features{
+					li{
+						color: $m02-font-white;
+
+						&.unchecked{
+							opacity: 0.5;
+						}
+					}
+				}
+
+				.btn{
+					background-color: $m02-background-green;
+					border: none;
+					color: $m02-font-white;
+
+					&:hover{
+						background-color: $m02-background-green2;
+					}
+				}
+			}
+		}
 	}
 }

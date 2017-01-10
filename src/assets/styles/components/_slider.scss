@@ -9,7 +9,7 @@
 
 	@include imgRetina('../images/slider-right-image', png, 604px, 433px, top left);
 
-	.slider__container{
+	&__container{
 		outline: none;
 
 		div{
@@ -33,5 +33,33 @@
 			font-size: 1.1em;
 			margin-bottom: 2em;
 		}
+	}
+}
+
+@media only screen and (max-width : 1200px) {
+	.slider{
+		background-position: center left !important;
+		background-size: auto 90% !important;
+	}
+}
+
+@media only screen and (max-width : 992px) {
+	.slider{
+		background-position: center left !important;
+		background-size: auto 60% !important;
+	}
+}
+
+@media only screen and (max-width : 768px) {
+	.slider{
+		background: transparent !important;
+		padding: 4em 0;
+	}
+}
+
+@media only screen and (max-width : 480px) {
+	.slider{
+		background: transparent !important;
+		padding: 4em 0;
 	}
 }

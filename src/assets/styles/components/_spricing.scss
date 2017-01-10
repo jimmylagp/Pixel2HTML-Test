@@ -14,7 +14,7 @@
 		z-index: 0;
 	}
 
-	.spricing__copytext{
+	&__copytext{
 		h2{
 			color: $m02-font-gray;
 			font-weight: 300;
@@ -29,7 +29,7 @@
 		}
 	}
 
-	.spricing__tables{
+	&__tables{
 		border-radius: 10px;
 		overflow: hidden;
 		text-align: center;
@@ -74,6 +74,12 @@
 					margin-bottom: 2em;
 					text-align: left;
 
+					span{
+						display: inline-block;
+						vertical-align: top;
+						width: 84%;
+					}
+
 					&.checked::before{
 						background-image: url(../images/checked.svg);
 						background-repeat: no-repeat;
@@ -87,6 +93,12 @@
 
 					&.unchecked{
 						padding-left: 28px;
+
+						span{
+							display: inline-block;
+							vertical-align: top;
+							width: auto;
+						}
 					}
 				}
 			}
@@ -171,5 +183,22 @@
 				}
 			}
 		}
+	}
+}
+
+@media only screen and (max-width : 480px) {
+    .spricing{
+		padding: 4em 0;
+
+		&__copytext{
+			h2{
+				font-size: 2em;
+			}
+
+			p{
+				font-size: 1.2em;
+			}
+		}
+		
 	}
 }

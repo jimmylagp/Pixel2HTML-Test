@@ -46,7 +46,38 @@
 		ul{
 			li{
 				padding:0 2em;
+				margin-bottom: 1.5em;
 			}
 		}
+	}
+}
+
+@media only screen and (max-width : 480px) {
+    .lastcontent{
+		padding: 4em 0;
+
+		&__copytext{
+			h2{
+				font-size: 2em;
+			}
+
+			.description{
+				font-size: 1.2em;
+			}
+		}
+
+		&__customers{
+			p{
+				margin-bottom: 2em;
+			}
+
+			ul{
+				li{
+					padding:0 1em;
+					margin-bottom: 1.5em;
+				}
+			}
+		}
+		
 	}
 }

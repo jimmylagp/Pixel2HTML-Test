@@ -220,3 +220,31 @@ th {
 .no-negative-magin{
     margin: 0;
 }
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+    body{
+        font-size: 13px !important;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+    body{
+        font-size: 12px !important;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+    body{
+        font-size: 12px !important;
+    }
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+    body{
+        font-size: 12px !important;
+    }
+}
